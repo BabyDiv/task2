@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/index.js"></script>
+  <title>QuestMeUp</title>
+  <meta name="description" content="Do Your Quest And Ae Aour Best">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="icons/logo1.svg" alt="Logo">
+  </header>
+
+  <main>
+
+    <section class="section__table">
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Capability</th>
+            <th>Type of capability</th>
+            <th>Approach and action plan</th>
+            <th>Start date</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>
+              <input type="text">
+            </td>
+
+            <td>
+              <form>
+                <label for="type"></label>							
+                <select required="" name="capability_commitments" class="capability_commitments" id="capability_commitments_type_1">
+                  <option value="resource">Resource</option>
+                  <option value="competence">Competence</option>
+                  <option value="habit" selected="">Habit</option>
+                </select>
+              </form>
+            </td>
+
+            <td>
+              <input type="text">
+            </td>
+
+            <td>
+              <input type="date" class="start" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="text">
+            </td>
+
+            <td>
+              <form>
+                <label for="type"></label>							
+                <select required="" name="capability_commitments" class="capability_commitments" id="capability_commitments_type_2">
+                  <option value="resource">Resource</option>
+                  <option value="competence">Competence</option>
+                  <option value="habit" selected="">Habit</option>
+                </select>
+              </form>
+            </td>
+
+            <td>
+              <input type="text">
+            </td>
+
+            <td>
+              <input type="date" class="start" id="start2" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="text">
+            </td>
+
+            <td>
+              <form>
+                <label for="type"></label>							
+                <select required="" name="capability_commitments" class="capability_commitments" id="capability_commitments_type_3">
+                  <option value="resource">Resource</option>
+                  <option value="competence">Competence</option>
+                  <option value="habit" selected="">Habit</option>
+                </select>
+              </form>
+            </td>
+
+            <td>
+              <input type="text">
+            </td>
+
+            <td>
+              <input type="date" id="start3" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="button">
+        <button onclick="createRow()">Add New Task</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+    
+</body>
+</html>

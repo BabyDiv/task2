@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body {
+  background-color: #f3f4f9; 
+}
+
+.logo {
+  width: 200px;
+  height: 46px;
+}
+
+header {
+  padding: 28px 0 0 97px;
+  margin-bottom: 44px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+td {
+  position: relative;
+  max-width: 360px;
+  min-width: 220px;
+}
+
+input {
+  position: absolute;
+  max-width: 210px;
+  left: 15;
+  top: 15;
+}
+
+tr:nth-child(even) {
+  background-color: #03228C;
+}
+
+
+tr:nth-child(odd) th, tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) th, tr:nth-child(even) td {
+  background-color: #fcfcfc;
+}
+
+.select {
+  width: auto;
+  max-height: none;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  padding-right: 2px;
+}
+
+#myDropDown, #myDropDown2, #myDropDown3 {
+  width: 100%;
+  padding: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
