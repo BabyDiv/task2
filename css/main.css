@@ -18,18 +18,6 @@ body {
   height: 46px;
 }
 
-header {
-  padding-top: 32px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%
-}
 
 table {
   width: 100%;
@@ -50,6 +38,10 @@ table {
   padding: 15px 0;
 }
 
+.row-1, .row-2, .row-3 {
+  display: none;
+}
+
 .section__table-row {
   border-bottom: 1px solid #dddee4;
 }
@@ -65,14 +57,18 @@ td {
   position: relative;
 }
 
+td label {
+  display: none;
+}
+
 th {
   font-weight: bold;
 }
 
-
 input[type="text"], input[type="date"], select {
   box-sizing: border-box;
   width: 100%;
+  text-align: center;
   margin-left: 0;
   padding: 4px;
   border: 1px solid #dddee4;
@@ -91,18 +87,15 @@ input[type="text"], input[type="date"], select {
     display: block;
   }
 
-  .row-2, .row-3 {
+  .row-1, .row-2, .row-3 {
     display: none;
   }
 
   thead {
     position: absolute;
-    width: auto;
-    display: block;
-    /* clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px; */
+    width: 1%;
     overflow: hidden;
+    display: none;
   }
 
   .thead__th {
@@ -110,8 +103,10 @@ input[type="text"], input[type="date"], select {
     text-align: left;
     vertical-align: middle;
     border-bottom: none;
-    width: 100%;
+    width: 1%;
     white-space: normal;
+    display: none;
+
   }
 
   tr {
@@ -126,6 +121,7 @@ input[type="text"], input[type="date"], select {
     align-items: center;
     width: 100%;
     padding: 10px;
+    padding-left: 0;
     border: none;
     border-bottom: none;
     position: relative;
@@ -133,9 +129,17 @@ input[type="text"], input[type="date"], select {
     text-align: left;
   }
 
-  input[type="text"], input[type="date"], select {
-    width: calc(100% - 20px);
-    margin-left: 10px;
+  td label {
+    display: block;
+    position: absolute;
+    white-space: normal;
+    left: 0;
+    top: 17px;
+  }
+
+  input[type="text"], input[type="date"], form {
+    width: 100%;
+    text-align: center;
 }
 
   td button {
@@ -148,6 +152,7 @@ input[type="text"], input[type="date"], select {
 
   .capability_commitments {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -158,7 +163,6 @@ input[type="text"], input[type="date"], select {
   overflow-x: hidden;
   border: 1px solid #dddee4;
   border-radius: 4px;
-  /* margin-left: 14%; */
   padding-right: 2px;
   text-align: center;
 }
@@ -203,7 +207,6 @@ input[type="text"], input[type="date"], select {
   font-weight: bold;          
   border: none;              
   padding: 4px 20px;
-  /* margin-left: 28%;       */
   border: 1.7px solid #dddee4;
   border-radius: 12px;      
   cursor: pointer;          
@@ -221,6 +224,7 @@ input[type="text"], input[type="date"], select {
 .nav-list {
   display: none;
   flex-direction: column;
+  list-style-type: none;
   width: 30%;
   position: absolute;
   top: 68px;
@@ -263,7 +267,7 @@ input[type="text"], input[type="date"], select {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 68px;
     left: 0;
     background-color: #939499;
     z-index: 1;
@@ -276,7 +280,6 @@ input[type="text"], input[type="date"], select {
 
   .nav-item a {
     padding: 15px 0;
-    border-bottom: 1px solid #dddee4;
   }
 
   .nav-list.show {
